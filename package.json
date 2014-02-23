@@ -2,7 +2,7 @@
   "name": "MultiWebRTC",
   "description": "Example of multi user webrtc",
   "version": "0.0.2-1",
-  "main": "example/server.js"
+  "main": "example/server.js",
   "engines": {
     "node": ">= 0.6.0"
   },
