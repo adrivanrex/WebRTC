@@ -79,13 +79,23 @@ if (navigator.webkitGetUserMedia) {
       return {
         "iceServers": [{
           "url": "stun:23.21.150.121"
+        },{
+          "url": "turn:162.243.210.239:3478?transport=udp"
+        },
+        {
+          "url": "turn:162.243.210.239:3478?transport=tcp"
         }]
       };
     }
     return {
       "iceServers": [{
-        "url": "stun:stun.l.google.com:19302"
-      }]
+          "url": "stun:23.21.150.121"
+        },{
+          "url": "turn:162.243.210.239:3478?transport=udp"
+        },
+        {
+          "url": "turn:162.243.210.239:3478?transport=tcp"
+        }]
     };
   };
 
